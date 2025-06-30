@@ -1,0 +1,16 @@
+streamlit
+PyPDF2
+langchain>=0.1.16
+langchain-community>=0.0.36
+langchain-huggingface>=0.0.3
+langchain-groq>=0.0.2
+sentence-transformers==2.6.1
+torch==2.2.2+cpu torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+faiss-cpu==1.7.4
+tiktoken==0.5.2
+numpy<2
+pandas
+streamlit-option-menu==0.3.6
+streamlit-extras==0.2.7
+selenium
+python-dotenv
