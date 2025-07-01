@@ -5,7 +5,8 @@
 
 
 ## Introduction
-Developed an advanced AI application that leverages Retrieval-Augmented Generation (RAG), Large Language Models (LLM), and OpenAI for comprehensive resume analysis. It excels at summarizing the resume, evaluating strengths, identifying weaknesses, and offering personalized improvement suggestions while also recommending the perfect job titles. Additionally, it seamlessly employs Selenium to extract vital LinkedIn data, including company names, job titles, locations, job URLs, and detailed job descriptions. This application simplifies the job-seeking journey by equipping users with comprehensive insights to elevate their career opportunities.
+Developed an advanced AI application that leverages Retrieval-Augmented Generation (RAG), Large Language Models (LLM), and Groq’s LLaMA 3 model for comprehensive resume analysis. It excels at summarizing the resume, evaluating strengths, identifying weaknesses, and offering personalized improvement suggestions while also recommending the perfect job titles. Additionally, it seamlessly employs Selenium to extract vital LinkedIn data, including company names, job titles, locations, job URLs, and detailed job descriptions. This application simplifies the job-seeking journey by equipping users with comprehensive insights to elevate their career opportunities.
+
 
 ## Table of Contents
 
@@ -28,7 +29,7 @@ Developed an advanced AI application that leverages Retrieval-Augmented Generati
 - Streamlit
 
 
-## 🛠Installation
+## Installation
 
 To run this project, you need to install the following packages:
 
@@ -64,7 +65,7 @@ To use this project, follow these steps:
 ## Features
 
 ### 1. Easy User Experience
-- Resume Analyzer AI makes it easy for users. You can upload your resume and enter your OpenAI API key without any hassle.  
+- Resume Analyzer AI makes it easy for users. You can upload your resume and enter your **Groq API key** without any hassle.  
 - The application is designed to be user-friendly so that anyone can use its powerful resume analysis features.  
 - It also uses the `PyPDF2` library to quickly extract text from your uploaded resume, which is the first step in doing a thorough analysis.
 
@@ -72,13 +73,13 @@ To use this project, follow these steps:
 - It uses a smart method via the Langchain library to break long sections of text from resumes into smaller, meaningful chunks.  
 - This clever technique improves the accuracy of the resume analysis and gives users practical advice to enhance their job prospects.
 
-### 3. Enhanced OpenAI Integration with FAISS
-- Seamlessly connects to OpenAI services using your API key to enable robust interactions and efficient information retrieval.  
+### 3. Enhanced LLM Integration with FAISS and Groq
+- Seamlessly connects to **Groq's high-performance inference API** using your Groq API key for ultra-fast, low-latency LLM interactions.  
 - FAISS (Facebook AI Similarity Search) converts both the text chunks and query data into numerical vectors, simplifying and speeding up the matching process.
 
 ### 4. Intelligent Chunk Selection in RAG and LLM
 - Retrieves relevant resume chunks by comparing user queries with vector embeddings and selecting the top K based on similarity scores.  
-- Uses ChatGPT 3.5 Turbo to analyze and generate smart responses from these retrieved chunks.
+- Uses **LLaMA 3 8B model** hosted on Groq to analyze and generate smart responses from these retrieved chunks.
 
 ### 5. Robust Question-Answering Pipeline
 - Processes the top K retrieved documents along with the user query to generate meaningful and coherent answers.  
