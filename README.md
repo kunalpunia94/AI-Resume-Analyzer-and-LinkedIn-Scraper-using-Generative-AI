@@ -51,7 +51,7 @@ pip install selenium
 To use this project, follow these steps:
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/gopiashokan/AI-Powered-Resume-Analyzer-and-LinkedIn-Scraper-with-Selenium.git
+   https://github.com/kunalpunia94/AI-Resume-Analyzer-and-LinkedIn-Scraper-using-Generative-AI.git
 2. **Install the required packages:**  
    ```bash
    pip install -r requirements.txt
