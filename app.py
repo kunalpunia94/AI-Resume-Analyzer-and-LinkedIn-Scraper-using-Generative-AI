@@ -84,7 +84,7 @@ class resume_analyzer:
 
         # Step 4: Use Groq's LLaMA3 LLM for question answering
         llm = ChatGroq(
-            model_name="llama3-8b-8192", 
+            model_name="llama3.1-8b-instant", 
             api_key=groq_api_key
         )
 
